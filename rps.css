@@ -56,6 +56,17 @@
   background: linear-gradient(to right, #ffc9c9, #ffffff, #ffc9c9);
 }
 
+.verdict {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  color: #ff5733;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+}
 
 .startGame, .result, .rounds {
   font-size: 3rem;
