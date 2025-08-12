@@ -36,23 +36,26 @@ function playRound() {
     const computerScore1 = document.querySelector(".computerScore");
     const round = document.querySelector(".rounds");
     const result = document.querySelector(".result");
-
+    const verdict = document.querySelector('.verdict');
     round.textContent = `Round ${roundNumber}`;
 
     let value1 = computerChoice();
     let value2 = playersChoice;
 
     if (value1 === value2) {
+        verdict.textContent = "Computer played",value1
         result.textContent = "RESULT = DRAW";
     } else if (
         (value1 === "ROCK" && value2 === "PAPER") ||
         (value1 === "PAPER" && value2 === "SCISSORS") ||
         (value1 === "SCISSORS" && value2 === "ROCK")
     ) {
+        verdict.textContent = "Computer played",value1
         result.textContent = "RESULT = WIN";
         playerScore2++;
         playerScore1.textContent = `Your Score = ${playerScore2}`;
     } else {
+        verdict.textContent = "Computer played",value1
         result.textContent = "RESULT = LOSE";
         computerScore2++;
         computerScore1.textContent = `Computer's Score = ${computerScore2}`;
@@ -68,6 +71,3 @@ function playRound() {
 }
 
 playerChoice();
-
-
-
